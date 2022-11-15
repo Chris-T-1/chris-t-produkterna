@@ -1,0 +1,106 @@
+body {
+  background-image: Srl('https://havenly.com/blog/wp-content/uploads/2021/05/Lisa2-1670x970-1.jpg'); -->
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-color: gb(255, 255, 157);  -->
+}
+
+.container_products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  padding-bottom: 2%;
+  margin-bottom: 0%; 
+  position: relative;
+}
+
+.container_nav {
+  display: flex;
+  justify-content: space-between ;
+}
+.navbar {
+  display: flex;
+  overflow: hidden;
+}
+.navbar a {
+  display: flex;
+  padding: 20px 50px;
+  margin-top: 23px;
+  border:dashed black 1px; 
+  border-radius: 45px;
+  text-decoration: none;
+  color: black;
+  background-color: rgb(244, 244, 198);
+  height: fit-content;
+}
+.navbar a:hover {
+  color: rgb(136, 44, 44);
+  text-decoration: underline rgb(224, 217, 87) 6px;
+}
+.navbar a.active {
+  background-color: rgb(135, 106, 39);
+  color:rgb(220, 196, 111);
+}
+.cart {
+  margin-top: 22px;
+  margin-right: 30px;
+  max-height: 40px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: rgb(249, 249, 162);
+}
+
+.logo {
+  display: flex;
+  margin-left: 20px;
+  max-height: 110px;
+}
+.table_png {
+  display: flex;
+  max-height: 250px;
+  border-radius: 30px;
+  border: 9px rgb(45, 58, 246) dotted;
+}
+.chair_png {
+  display: flex;
+  max-height: 250px;
+  border-radius: 30px;
+  border: 9px rgb(45, 58, 246) dotted;
+}
+.beds_png {
+  display: flex;
+  max-height: 250px;
+  border-radius: 30px;
+  border: 9px rgb(45, 58, 246) dotted;
+}
+.couches_png {
+  display: flex;
+  max-height: 250px;
+  border-radius: 30px;
+  border: 9px rgb(45, 58, 246) dotted;
+}
+.paintings_png {
+  display: flex;
+  max-height: 250px;
+  border-radius: 30px;
+  border: 9px rgb(45, 58, 246) dotted;
+}
+.vases_png {
+  display: flex;
+  max-height: 250px;
+  border-radius: 30px;
+  border: 9px rgb(45, 58, 246) dotted;
+}
+.index_title {
+  display: flex;
+  justify-content: center;
+  padding: 23px 2px;
+  background-color: rgb(245, 245, 221);
+}
