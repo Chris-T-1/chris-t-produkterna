@@ -1,9 +1,9 @@
 body {
-  background-image: Srl('https://havenly.com/blog/wp-content/uploads/2021/05/Lisa2-1670x970-1.jpg'); -->
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  background-color: gb(255, 255, 157);  -->
+  background-image: url('../img/background.png');
+  background-size: auto;
+  background-repeat: repeat;
+  overflow: visible;
+  background-color: rgb(255, 255, 157);
 }
 
 .container_products {
@@ -51,7 +51,7 @@ body {
 .cart {
   margin-top: 22px;
   margin-right: 30px;
-  max-height: 40px;
+  height: 60px;
   padding: 10px 20px;
   border-radius: 20px;
   background-color: rgb(249, 249, 162);
@@ -103,4 +103,13 @@ body {
   justify-content: center;
   padding: 23px 2px;
   background-color: rgb(245, 245, 221);
+}
+.slideshow {
+  display: flex;
+  max-width: 1000px;
+  height: 500px;
+  border: 10px black double;
+  border:groove ;
+  padding: 12px;
+  margin-bottom: 250px ;
 }
