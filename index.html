@@ -2,12 +2,15 @@
 <html>
   <head>
     <link rel="stylesheet" href="./css/style.css"/>
-    <script src="main.js" defer></script>
-    <meta charset="UTF-8" />
+    <script src="main.js" defer></script> <!--länk till java script som gör att java script kod fungerar på sidan och en defer för att den ska ladda in efter allt annat för att minimera lagg.-->
+    <meta charset="UTF-8" /> <!--För att åäö ska fungera-->
     <title>Furnitaris</title>
   </head>
   <body>
-    <div class="container_nav">
+ <!-- En navbar som har en dropdown meny, Det gjorde jag genom att göra en "a" tag som fungerar som en länk och lade den i en class
+där jag stilade den så som jag ville ha den, därefter lade jag en container på alla "a" taggar i navbar för att fixera vart de ska
+placeras i förhållande till varandra-->
+ <div class="container_nav">   
     <a href="index.html"><img class="logo" src="../img/Furniture_logo.png"></a>
       <nav>  
         <div class="dropdown"> 
@@ -58,7 +61,7 @@
         <img class="mySlides" src="./img/furniture-design.png">
         <img class="mySlides" src="./img/bedroom-design.png">
         <img class="mySlides" src="./img/modern-furniture-design.jpeg">
-    </div>
+    </div> <!--Bilder som fungerar som länkar genom att ha en a tag innan img-->
     <h1 class="index_subheader"> Här kan du välja mellan alla våra kategorier!</h1>
     <div class="container_products">
       <div class="item">
@@ -74,6 +77,6 @@
       <div class="item">
         <a href="products.html#vases"><img class="furniture_png" src="https://i.etsystatic.com/7413290/r/il/9824fe/3690815933/il_1588xN.3690815933_6crx.jpg"></div></a>
       </div>
-      <footer></footer>
+      <footer></footer> <!--Färg i slutet av sidan så att det blir lite finare-->
   </body>
 </html>

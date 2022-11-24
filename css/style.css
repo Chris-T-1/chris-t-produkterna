@@ -1,8 +1,8 @@
-*{
+*{ /* för att den automatiska margin på sidan är 0*/
   margin: 0%;
 }
 
-body {
+body { /*hur bakgrund och överflödet ska se ut*/
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -20,7 +20,6 @@ body {
   flex: 1;
   justify-content: flex-start;
 }
-
 footer {
   display: flex;
   justify-self: flex-end;
@@ -30,12 +29,12 @@ footer {
   bottom: 0;
 }
 
-.container_products {
+.container_products { /*sortera produkterna på ett fint sätt*/
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.item {
+.item { /*för att varje bild enskilt förflyttas och inte hela gruppen*/
   display: flex;
   justify-content: space-around;
   width: 30%;
@@ -50,7 +49,7 @@ footer {
 nav {
   display: flex;
 }
-nav a {
+nav a { /*gäller alla länkar (a taggar) i navigation baren*/
   display: flex;
   padding: 20px 50px;
   margin: 23px 10px 0px 10px;
@@ -61,25 +60,42 @@ nav a {
   background-color: rgb(244, 244, 198);
   height: fit-content;
 }
-nav a:hover {
+nav a:hover { /*design när man håller musen ovanför länkarna*/
   color: rgb(136, 44, 44);
   text-decoration: underline rgb(224, 217, 87) 4px;
 }
-nav a:active {
+nav a:active { /*när man klickar på länkarna*/
   background-color: rgb(54, 49, 210);
   color: rgb(220, 196, 111);
 }
 .about_title {
-  margin: 30px 0px 25px 20px;
-  color: white;
+  margin: 30px 0px 25px 40px;
+  color: rgb(33, 56, 233);
 }
 .about_text {
   padding: 20px;
   max-width: 550px;
+  font-size: 20px;
   color: white;
   height: 320px;
   background-color: rgba(43, 43, 217, 0.819);
   border-radius: 60px;
+  margin-bottom: 200px;
+  margin-left: 15px;
+}
+.about_content {
+  display: flex;
+  justify-content: space-between;
+}
+.about_img {
+  margin-bottom: 80px;
+  border-radius: 20px;
+}
+.documentation_img {
+  height: 550px;
+  width: 700px;
+  margin-bottom: 60px;
+  border-radius: 40px;
 }
 /*hur kundvagnen ska se ut*/
 .cart {
@@ -94,6 +110,7 @@ nav a:active {
 .logo {
   display: flex;
   margin-left: 20px;
+  margin-top: 10px;
   height: 110px;
   border: blue 2px;
   border-style: dotted;
@@ -152,7 +169,7 @@ nav a:active {
   padding: 20px;
   background-color: rgba(255, 255, 0, 0.643);
 }
-/*Knapp till toppen i produkt sidan*/
+/*Knapp till toppen i produkt sidan och hur den ska se ut*/
 .top_link {
   color: white;
   text-decoration: none;
@@ -176,16 +193,17 @@ nav a:active {
   position: absolute;
   background: transparent;
   min-width: 160px;
-  z-index: 1;
+  z-index: 1;     /*så att dropdown menyn ligger överst hela tiden*/
 }
-.dropdown-content a {
+.dropdown-content a { /*hur dropdown ska se ut*/
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
-
-
-.dropdown-content a:hover {background-color: #ddd;}
-
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content { /*när man drar över nav bar länkarna så visar sig dropdown menyn*/
+  display: block;
+}
