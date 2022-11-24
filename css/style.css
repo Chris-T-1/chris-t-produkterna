@@ -28,7 +28,6 @@ footer {
   background-color: #2422bd;
   bottom: 0;
 }
-
 .container_products { /*sortera produkterna på ett fint sätt*/
   display: flex;
   flex-wrap: wrap;
@@ -38,9 +37,13 @@ footer {
   display: flex;
   justify-content: space-around;
   width: 30%;
+  transition: transform .4s;
   padding-bottom: 2%;
   margin-bottom: 0%;
   position: relative;
+}
+.item:hover {
+  transform: scale(1.1);
 }
 .container_nav {
   display: flex;
@@ -95,6 +98,12 @@ nav a:active { /*när man klickar på länkarna*/
   height: 550px;
   width: 700px;
   margin-bottom: 60px;
+  border-radius: 40px;
+}
+.contact_img {
+  height: 550px;
+  width: 800px;
+  margin-bottom: 20px;
   border-radius: 40px;
 }
 /*hur kundvagnen ska se ut*/
